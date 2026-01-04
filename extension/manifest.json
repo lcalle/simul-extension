@@ -2,7 +2,7 @@
 {
   "manifest_version": 3,
   "name": "SIMUL - Video Sync",
-  "version": "4.0",
+  "version": "4.1",
   "description": "Synchronize video playback across streaming platforms with SIMUL.",
   "permissions": [
     "activeTab",
