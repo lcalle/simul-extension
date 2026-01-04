@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 300px; background: #0a0a0a; color: #e5e5e5; font-family: sans-serif; padding: 16px; position: relative; }
+    h1 { color: #e50914; margin: 0 0 16px 0; font-size: 18px; letter-spacing: 1px; display: flex; justify-content: space-between; align-items: center; }
+    
+    input { width: 100%; box-sizing: border-box; background: #1a1a1a; border: 1px solid #333; color: white; padding: 8px; margin-bottom: 12px; border-radius: 4px; }
+    
+    button { width: 100%; padding: 10px; background: #e50914; color: white; border: none; font-weight: bold; border-radius: 4px; cursor: pointer; margin-bottom: 8px; }
+    button:hover { background: #b2070f; }
+    button:disabled { background: #555; cursor: not-allowed; }
+    
+    .status { font-size: 12px; color: #888; margin-top: 10px; text-align: center; }
+    .error { color: #ff4444; font-size: 11px; margin-top: 5px; text-align: center; display: none; background: rgba(255,0,0,0.1); padding: 4px; border-radius: 4px;}
+    .help { font-size: 10px; color: #666; margin-bottom: 4px; display: block; }
+  </style>
+</head>
+<body>
+  <h1>SIMUL ADAPTER</h1>
+  
+  <span class="help">DISPLAY NAME</span>
+  <input type="text" id="userId" placeholder="e.g. Colonel Mustard" />
+  
+  <span class="help">ROOM CODE</span>
+  <input type="text" id="roomId" placeholder="e.g. CINEMA-123" />
+
+  <button id="connectBtn">CONNECT TO ROOM</button>
+  
+  <div class="status" id="status">Disconnected</div>
+  <div class="error" id="errorMsg"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
